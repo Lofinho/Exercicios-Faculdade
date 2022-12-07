@@ -20,6 +20,7 @@ do {
     for (let i = 0; i < categorias.length; i++) {
         categoriaUsuario == categorias[i] ? controle = 1 : ''
     }
+    
 } while (controle == 0);
 
 switch (categoriaUsuario.toUpperCase()) {
