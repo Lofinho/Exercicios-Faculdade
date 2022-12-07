@@ -48,8 +48,4 @@ do {
     }
 } while (!Number.isInteger(n1) || n1 == n2);
 
-if (n1 > n2) {
-    alert(`O número ${n1} é maior`);
-} else {
-    alert(`O número ${n2} é maior`);
-}
+n1 > n2 ? alert(`O número ${n1} é maior`) : alert(`O número ${n2} é maior`);

@@ -15,11 +15,12 @@ do {
 } while (escolha != 1 && escolha != 2);
 
 function abastercer() {
-    let recebeValor = Number(prompt('Digite o valor a ser abastecido'));
+    do{
+        recebeValor = Number(prompt('Digite o valor a ser abastecido'));
+    }while(!(recebeValor >= 0))
 
     if (!(recebeValor >= 0) || isNaN(recebeValor)) {
         alert('Digite um valor');
-        abastercer();
     } else if (escolha === 1) {
         litros = recebeValor / gasolina;
         alert(`Foi adicionado ${(litros.toFixed(1))} de Gasolina no veículo`);
