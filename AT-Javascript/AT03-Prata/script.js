@@ -7,8 +7,10 @@
 let ano;
 
 do {
-    ano = Number(prompt('Digite o ano'));
-} while (!(ano >= 1000));
+    ano = prompt('Digite o ano');
+} while (!(ano.length == 4 && ano >= 1000));
+
+console.log(ano)
 
 function verificaBissexto(ano) {
 
