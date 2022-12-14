@@ -1,3 +1,9 @@
+// Crie um programa simples que gere um número aleatório de 1 a 6 e apresente a figura do dado correta na página HTML.
+
+// Incremente o seu programa para apresentar 2 dados.
+
+// As figuras dos dados já estão incluídas neste projeto.
+
 function rolarDados(){
 
   let imagens = [
