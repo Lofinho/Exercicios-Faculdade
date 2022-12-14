@@ -11,14 +11,13 @@ body{
 .hide{
   opacity: .07;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 .dices{
   position: relative;
   width: 650px;
-  border: 1px solid red;
 }
 
 .dice1, .dice2{
@@ -40,5 +39,8 @@ body{
 .rolar-dados{
   display: block;
   margin: 0 auto;
-
+  padding: 10px 20px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
 }
