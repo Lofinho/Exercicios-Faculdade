@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 9;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 20px;
+}
+
+.hide{
+  opacity: .07;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dices{
+  position: relative;
+  width: 650px;
+}
+
+.dice1, .dice2{
+  background: url(img/dice_1.gif) no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.unhide{
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
