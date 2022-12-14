@@ -18,6 +18,7 @@ body{
 .dices{
   position: relative;
   width: 650px;
+  border: 1px solid red;
 }
 
 .dice1, .dice2{
@@ -34,4 +35,10 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.rolar-dados{
+  display: block;
+  margin: 0 auto;
+
 }
