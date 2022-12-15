@@ -1,0 +1,22 @@
+body {
+    background: rgb(36, 35, 35);
+}
+
+
+.circles{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.cartela{
+  display: flex;
+  gap: 20px;
+}
