@@ -6,7 +6,7 @@ body {
 .circles{
   width: 100px;
   height: 100px;
-  background: #fff;
+  background: #ccc;
   color: #000;
   border-radius: 50%;
   display: flex;
@@ -14,9 +14,16 @@ body {
   align-items: center;
   font-size: 30px;
   font-weight: 700;
+  box-shadow: inset -4px -10px 10px 0px #777777;
 }
 
 .cartela{
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
+  width: 100vw;
+  height: 100vh;
+  background: url(mega-sena.jpg) no-repeat center;
+  background-size: contain;
 }
