@@ -12,8 +12,9 @@ function calcular() {
     let peso = document.getElementById('peso').value;
     let altura = document.getElementById('altura').value;
     let mensagem = document.getElementById('resultado');
-    altura = altura / 100;
-    imc = peso / altura ** 2;
+    altura >= 100 ? altura = altura / 100 : ''
+    
+    let imc = peso / altura ** 2;
 
     let magreza = document.getElementById('magreza').getElementsByTagName('td');
     let normal = document.getElementById('normal').getElementsByTagName('td');
@@ -28,15 +29,37 @@ function calcular() {
         .getElementsByTagName('td');
 
     if (peso > 0 && altura > 0) {
-        imc < 18.5
-            ? (magreza[0].style.background = 'green')
-            : imc <= 24.9
-            ? (normal[0].style.background = 'green')
-            : imc <= 29.9
-            ? (sobrepeso[0].style.background = 'green')
-            : imc <= 39.9
-            ? (obesidade[0].style.background = 'green')
-            : (obesidade_grave[0].style.background = 'green');
+        if(imc < 18.5){
+            for (i of magreza) {
+                i.style.background = 'green';
+            }
+        }else if(imc < 24.9){
+            for(i of normal){
+                i.style.background = 'green'
+            }
+        }else if(imc < 29.9){
+            for (i of sobrepeso) {
+                i.style.background = 'green';
+            }
+        }else if(imc < 39.9){
+            for (i of obesidade) {
+                i.style.background = 'green';
+            }
+        }else{
+            for (i of obesidade_grave) {
+                i.style.background = 'green';
+            }
+        }
+
+        // imc < 18.5
+        //     ? (magreza[0].style.background = 'green')
+        //     : imc <= 24.9
+        //     ? (normal[0].style.background = 'green')
+        //     : imc <= 29.9
+        //     ? (sobrepeso[0].style.background = 'green')
+        //     : imc <= 39.9
+        //     ? (obesidade[0].style.background = 'green')
+        //     : (obesidade_grave[0].style.background = 'green');
 
         mensagem.innerHTML = imc.toFixed(2);
     } else {
