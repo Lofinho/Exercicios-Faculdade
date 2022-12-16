@@ -1,0 +1,30 @@
+table,
+th,
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    background: slategrey;
+    color: #fff;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button {
+    align-self: flex-start;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
