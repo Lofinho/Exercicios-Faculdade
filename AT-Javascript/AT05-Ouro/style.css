@@ -1,3 +1,19 @@
 body{
     background: #c4c4c4;
 }
+
+.container, .input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.input input{
+    padding: 5px;
+}
+
+.button{
+    align-self: flex-start;
+    padding: 8px 4px;
+}
