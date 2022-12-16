@@ -1,0 +1,18 @@
+body{
+    background: #c4c4c4;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+}
+
+.flex input{
+    padding: 5px;
+}
+
+.button{
+    align-self: flex-start;
+}
