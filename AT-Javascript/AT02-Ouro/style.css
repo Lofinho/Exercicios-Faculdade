@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(#0089d3, #00b871);
+    width: 100vw;
+    height: calc(100vh - 50px);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.icon-person {
+    border: 4px solid #e2faff;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.detalhe-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.detalhe-icon {
+    position: relative;
+}
+
+.detalhe-icon::before,
+.detalhe-icon::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background: #e2faff;
+}
+
+.detalhe-icon::before {
+    top: 50%;
+    width: 355px;
+    right: 95px;
+}
+
+.detalhe-icon::after {
+    top: 50%;
+    width: 350px;
+}
+
+.container-form {
+    background: #b3d4db;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 30px;
+    height: 500px;
+}
+
+.container-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 120px;
+}
+
+.titulo-form {
+    color: #006e6e;
+    margin-block: 20px;
+}
+
+.input-form {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    background: #006e6e;
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+.input-form::placeholder {
+    color: #f3f3f3;
+}
+
+.input-completo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: #006e6e;
+}
+
+.icon-input {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: text;
+}
+
+.col-b .icon-input{
+  cursor: default;
+}
+
+.b-calc{
+  padding: 5px;
+  color: #f3f3f3;
+  background: #ff8800;
+  border: none;
+  border-radius: 10px;
+  margin-block: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

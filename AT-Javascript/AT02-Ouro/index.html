@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="detalhe-container">
+            <span class="detalhe-icon"
+                ><img
+                    class="icon-person"
+                    src="icons/person.svg"
+                    alt="icon-person"
+            /></span>
+        </div>
+
+        <div class="container">
+            <div class="col-a">
+                <div class="container-form">
+                    <div class="box-title">
+                        <img src="icons/arrow.svg" alt="arrow" />
+                        <h2 class="titulo-form">
+                            Calcular Percentual de Gastos
+                        </h2>
+                    </div>
+                    <form>
+                        <div class="input-completo">
+                            <label for="money">
+                                <img
+                                    class="icon-input"
+                                    src="icons/money.svg"
+                                    alt="person-icon"
+                                />
+                            </label>
+                            <input
+                                class="input-form"
+                                type="number"
+                                id="money"
+                                placeholder="Renda Mensal"
+                                autocomplete="off"
+                            />
+                        </div>
+
+                        <div class="input-completo">
+                            <label for="moradia">
+                                <img
+                                    class="icon-input"
+                                    src="icons/house.svg"
+                                    alt="person-icon"
+                                />
+                            </label>
+                            <input
+                                class="input-form"
+                                type="number"
+                                id="moradia"
+                                placeholder="Gastos com Moradia"
+                                autocomplete="off"
+                            />
+                        </div>
+                        <div class="input-completo">
+                            <label for="educacao">
+                                <img
+                                    class="icon-input"
+                                    src="icons/school.svg"
+                                    alt="person-icon"
+                                />
+                            </label>
+                            <input
+                                class="input-form"
+                                type="number"
+                                id="educacao"
+                                placeholder="Gastos com Educação"
+                                autocomplete="off"
+                            />
+                        </div>
+                        <div class="input-completo">
+                            <label for="transporte">
+                                <img
+                                    class="icon-input"
+                                    src="icons/car.svg"
+                                    alt="person-icon"
+                                />
+                            </label>
+                            <input
+                                class="input-form"
+                                type="number"
+                                id="transporte"
+                                placeholder="Gastos com Transporte"
+                                autocomplete="off"
+                            />
+                        </div>
+                    </form>
+                    <input
+                        class="b-calc"
+                        type="button"
+                        value="Calcular"
+                        onclick="calcular()"
+                    />
+                </div>
+            </div>
+
+            <div class="col-b">
+                <div class="container-form">
+                    <div class="box-title">
+                        <img src="icons/arrow-down.svg" alt="arrow" />
+                        <h2 class="titulo-form">Resultado</h2>
+                    </div>
+                    <form>
+                        <div class="input-completo">
+                            <label for="resultado-moradia">
+                                <img
+                                    class="icon-input"
+                                    src="icons/house.svg"
+                                    alt="person-icon"
+                                />
+                            </label>
+                            <input
+                                class="input-form input-js"
+                                type="text"
+                                id="resultado-moradia"
+                                placeholder="Gastos com Moradia" disabled
+                            />
+                        </div>
+                        <div class="input-completo">
+                            <label for="resultado-educacao">
+                                <img
+                                    class="icon-input"
+                                    src="icons/school.svg"
+                                    alt="person-icon"
+                                />
+                            </label>
+                            <input
+                                class="input-form input-js"
+                                type="text"
+                                id="resultado-educacao"
+                                placeholder="Gastos com Educação" disabled
+                            />
+                        </div>
+                        <div class="input-completo">
+                            <label for="resultado-transporte">
+                                <img
+                                    class="icon-input"
+                                    src="icons/car.svg"
+                                    alt="person-icon"
+                                />
+                            </label>
+                            <input
+                                class="input-form input-js"
+                                type="text"
+                                id="resultado-transporte"
+                                placeholder="Gastos com Transporte" disabled
+                            />
+                        </div>
+                    </form>
+                    <input
+                        class="b-calc "
+                        type="button"
+                        value="Zerar"
+                        onclick="resetar()"
+                    />
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
